@@ -100,6 +100,7 @@ class _QRViewExampleState extends State<QRViewExample> {
     );
   }
 
+  // qr code view
   Widget _buildQrView(BuildContext context) {
     // For this example we check how width or tall the device is and change the scanArea and overlay accordingly.
     var scanArea = (MediaQuery.of(context).size.width < 400 ||
@@ -122,6 +123,7 @@ class _QRViewExampleState extends State<QRViewExample> {
     );
   }
 
+  // qr code view
   void _onQRViewCreated(QRViewController controller) {
     setState(() {
       this.controller = controller;
@@ -134,6 +136,7 @@ class _QRViewExampleState extends State<QRViewExample> {
     });
   }
 
+  //To check or request the camera Permission
   void _onPermissionSet(BuildContext context, QRViewController ctrl, bool p) {
     log('${DateTime.now().toIso8601String()}_onPermissionSet $p');
     if (!p) {

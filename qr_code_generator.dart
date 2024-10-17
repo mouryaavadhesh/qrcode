@@ -8,7 +8,8 @@ class QRCodeGenerator extends StatefulWidget {
 }
 
 class _QRCodeGeneratorState extends State<QRCodeGenerator> {
-  String message = '';
+
+  String message = '';// Message which will use to generate every time user type new text the bar code
 
   @override
   Widget build(BuildContext context) {

@@ -70,6 +70,7 @@ class MyHomePage extends StatelessWidget {
     );
   }
 
+  //To request the camera Permission
   Future<void> requestPermission() async {
     await Permission.camera
         .onDeniedCallback(() async {
@@ -91,6 +92,8 @@ class MyHomePage extends StatelessWidget {
         })
         .request();
   }
+
+  //To check the camera Permission
 
   Future<bool> checkPermissionStatus() async {
     const permission = Permission.camera;
